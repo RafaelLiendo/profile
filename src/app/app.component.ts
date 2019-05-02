@@ -11,7 +11,6 @@ export class AppComponent {
 
   pondOptions = {
     class: 'my-filepond',
-    multiple: true,
     labelIdle: 'Arraste uma foto do perfil para cá ou clique aqui!',
     acceptedFileTypes: 'image/png, image/jpeg, image/gif',
     imagePreviewHeight: 70,
@@ -23,7 +22,7 @@ export class AppComponent {
     styleButtonRemoveItemPosition: 'center bottom'
   };
 
-  pondFiles = ['index.html'];
+  pondFiles = ['assets/profile.jpg'];
 
   pondHandleInit() {
     console.log('FilePond has initialised', this.myPond);
